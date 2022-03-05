@@ -1,0 +1,30 @@
+.gpt3__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.gpt3__brand div {
+  flex: 1;
+  max-width: 50px;
+  margin-right: 2rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gpt3__brand img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .gpt3__brand div {
+    max-width: 30px;
+  }
+  .gpt3__brand {
+    height: 50px;
+    margin-top: 1rem;
+  }
+}

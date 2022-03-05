@@ -1,0 +1,223 @@
+.contact__section {
+  display: flex;
+
+  background-color: #131e2f;
+  padding: 2rem;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-evenly;
+}
+.contact__section-title h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 45px;
+  color: #66fcf1;
+}
+.contact__section-title p {
+  max-width: 600px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.contact__section-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__section-form-header {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  gap: 1rem;
+}
+.contact__section-form input {
+  min-height: 50px;
+
+  width: 100%;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 0.7rem;
+  padding: 0 1rem;
+
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.contact__section-form-header input {
+  width: 100%;
+}
+.contact__section-form .message_input {
+  line-height: 150px;
+}
+.contact__section-form button {
+  margin-right: 1rem;
+  width: 200px;
+  min-height: 50px;
+  color: white;
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  cursor: pointer;
+  outline: none;
+  padding: 0 1rem;
+  background-color: transparent;
+  border: 2px #66fcf1 solid;
+  transition: 300ms;
+}
+.contact__section-form button:hover {
+  transform: scale(1.03);
+}
+.contact__section-form .button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.contact__section-map {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.contact__section-map img {
+  width: 100%;
+}
+.contact__section-map .contact__section-outercontainer {
+  display: flex;
+}
+.contact__section-map-container {
+  position: relative;
+}
+.contact__section-map .contact__section-map-text {
+  position: absolute;
+  width: 50%;
+  top: 10px;
+  left: 10px;
+  max-width: 200px;
+  padding: 1rem;
+  background-color: rgba(28, 42, 59, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+.contact__section-map .contact__section-map-text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 188% */
+
+  color: #97aabd;
+}
+
+.contact__section-map-link-container img {
+  width: 30px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.contact__section-map-link-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact__section-map-link {
+  display: flex;
+  align-items: stretch;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__section-map-link .contact__section-map-link-border {
+  width: 3px;
+  display: block;
+  height: 50%;
+
+  background-color: #66fcf1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.25rem;
+}
+@media screen and (max-width: 1600px) {
+  .contact__section-map .contact__section-map-text p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .contact__section-map .contact__section-map-text {
+    padding: 10px;
+    margin: 0;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .contact__section-map .contact__section-map-text {
+    width: 35%;
+  }
+  .contact__section-form button {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contact__section {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact__section-map-link-container {
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 1rem;
+  }
+  .contact__section-map-link-container img {
+    margin: 0;
+  }
+  .contact__section-map-link .contact__section-map-link-border {
+    height: 3px;
+    width: 100%;
+  }
+  .contact__section-map-link {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact__section-form input {
+    font-size: 14px;
+  }
+  .contact__section-map .contact__section-map-text p {
+    font-size: 8px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact__section-map .contact__section-map-text {
+    width: 30%;
+    min-width: 85px;
+  }
+  .contact__section-map-link-container img {
+    width: 20px;
+  }
+  .contact__section-map .contact__section-map-text p {
+    font-size: 6px;
+    line-height: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact__section-form button {
+    font-size: 15px;
+  }
+}
