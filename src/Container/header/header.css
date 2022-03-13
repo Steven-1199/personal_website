@@ -18,6 +18,10 @@
   letter-spacing: -0.04em;
   color: #d1d7e0;
 }
+.titleS {
+  color: #66fcf1;
+  font-size: 10rem;
+}
 
 .gpt3__header-content p {
   font-family: Manrope;
@@ -68,7 +72,7 @@
   cursor: pointer;
   outline: none;
   padding: 0 1rem;
-  background-color: #c96567;
+  background-color: #66fcf1;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -125,7 +129,7 @@
     width: 80%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 660px) {
   .gpt3__header-image img {
     width: 90%;
   }
@@ -148,6 +152,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .titleS {
+    font-size: 8rem;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -163,5 +170,8 @@
   .gpt3__header-content__input button {
     font-size: 12px;
     line-height: 16px;
+  }
+  .titleS {
+    font-size: 6rem;
   }
 }

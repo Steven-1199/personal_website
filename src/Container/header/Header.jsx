@@ -9,15 +9,15 @@ const Header = () => {
   return (
     <div className="gpt3__header section__padding" id="home">
       <div className="gpt3__header-content">
-        <h1 className="">Hello! I'm Phanit Phou</h1>
+        <h1 className="">
+          <span className="titleS">Hello!</span> <br />
+          I'm Phanit Phou
+        </h1>
         <p>
           I am a junior web developer based in Louisville, ky who loves to learn
           new things
         </p>
-        <div className="gpt3__header-content__input">
-          <input type="email" placeholder="Write me an email" />
-          <button type="button">Send</button>
-        </div>
+
         <div className="gpt3__header-content__people">
           <img src={download} />
 

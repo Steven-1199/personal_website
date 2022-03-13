@@ -1,14 +1,22 @@
 .gpt3__brand {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
+  gap: 20px;
 }
-.gpt3__brand div {
+
+.gpt3__brand-border {
+  border: 1px #66fcf1 solid;
+  height: 2px;
+  width: 35%;
+  display: block;
+}
+.gpt3__brand .gpt3__brand-container div {
   flex: 1;
   max-width: 50px;
-  margin-right: 2rem;
+
   cursor: pointer;
 
   display: flex;
@@ -18,13 +26,20 @@
 .gpt3__brand img {
   max-width: 100%;
 }
+.gpt3__brand-container {
+  display: flex;
+  gap: 25px;
+}
 
 @media screen and (max-width: 400px) {
-  .gpt3__brand div {
+  .gpt3__brand .gpt3__brand-container div {
     max-width: 30px;
   }
   .gpt3__brand {
     height: 50px;
     margin-top: 1rem;
+  }
+  .gpt3__brand-border {
+    display: none;
   }
 }

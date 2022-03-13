@@ -7,7 +7,7 @@ import homebb from "./assets/homebb.png";
 function App() {
   return (
     <div className="App">
-      <div className="gradient__bg">
+      <div className="app">
         <Navbar />
         <Header />
       </div>

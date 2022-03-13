@@ -8,7 +8,9 @@ import live from "../../assets/live.png";
 const Features = () => {
   return (
     <div className="feature-project section__padding" id="project">
-      <h1>FEATURE PROJECT</h1>
+      <h1>
+        <span className="feature-project-title-extra">FEATURE </span> PROJECT
+      </h1>
       <div className="feature-project-container">
         <div className="feature-project_jouili">
           <div className="feature-project_jouili_img">
@@ -29,7 +31,10 @@ const Features = () => {
                 </p>
               </div>
 
-              <p className="tect">React Tailwind Firebase DaisyUI</p>
+              <p className="tect">
+                React <span style={{ color: "#66fcf1" }}>Tailwind </span>
+                Firebase DaisyUI
+              </p>
             </div>
             <div className="feature-project_jouili_link_container">
               <div className="feature-project_jouili_link link_less">
@@ -70,7 +75,11 @@ const Features = () => {
                 <p>A website that allow you to search hundrend of superheros</p>
               </div>
 
-              <p className="tect">React API Hook Javascript</p>
+              <p className="tect">
+                <span style={{ color: "#66fcf1" }}>React</span> API{" "}
+                <span style={{ color: "#66fcf1" }}>Hook </span>
+                Javascript
+              </p>
             </div>
             <div className="feature-project_jouili_link_container superhero_link_container">
               <div className="feature-project_jouili_link link_less">

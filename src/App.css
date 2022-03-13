@@ -11,6 +11,9 @@ a {
   color: unset;
   text-decoration: none;
 }
+.app {
+  background-color: var(--color-bg);
+}
 
 .gradient__bg {
   /* ff 3.6+ */

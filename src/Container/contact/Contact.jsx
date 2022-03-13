@@ -4,8 +4,29 @@ import map from "../../assets/map.png";
 import linkedin from "../../assets/linkedin.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_09jovr6",
+        "template_3y3pkm6",
+        e.target,
+        "a27z3y8ep7LeEU137"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <div className="section__padding" id="contact">
       <div className="contact__section">
@@ -18,21 +39,24 @@ const Footer = () => {
             </p>
           </div>
           <div className="contact__section-outercontainer">
-            <div className="contact__section-form">
+            <form className="contact__section-form" onSubmit={sendEmail}>
               <div className="contact__section-form-header">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Name" name="user_name" />
+                <input type="email" placeholder="Email" name="user_email" />
               </div>
-              <input type="text" placeholder="Subject" />
+              <input type="text" placeholder="Subject" name="subject" />
               <input
                 className="message_input"
                 type="text"
                 placeholder="Message"
+                name="message"
               />
               <div className="button">
-                <button type="submit">Send message</button>
+                <button type="submit" value="Send">
+                  Send message
+                </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
         <div className="contact__section-map">

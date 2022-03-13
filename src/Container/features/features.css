@@ -9,6 +9,10 @@
   line-height: 45px;
   color: #edeae5;
 }
+.feature-project-title-extra {
+  color: #66fcf1;
+  font-size: 3rem;
+}
 
 .feature-project-container {
   margin-top: 4rem;
@@ -97,12 +101,13 @@
 }
 .link_extra {
   padding: 0.25rem 1rem;
-  border-width: 3px;
+  /*border-width: 3px;
   border-style: solid;
   border-image: linear-gradient(to right, #042c54, #176cc8) 1;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 50px;*/
   margin-left: 1rem;
   box-shadow: 5px 5px 5px;
+  border: 2px #66fcf1 solid;
 }
 .feature-project_jouili_link_container {
   display: flex;
