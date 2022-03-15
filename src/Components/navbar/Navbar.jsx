@@ -17,6 +17,7 @@ const Navbar = () => {
       </p>
     </>
   );
+
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="gpt3__navbar">

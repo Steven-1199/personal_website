@@ -22,7 +22,7 @@ const Header = () => {
           <img src={download} />
 
           <a
-            href="https://s3.amazonaws.com/symp.csm.usprod/cardinalcareers/files/a54/a5453f63a49b2c53aa3d615608bb2ff4.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAID3RBESXBCESHUGA%2F20220313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220313T115616Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8d7c28e6738fd44ee2cf4c2bc8021a131ec33f4c664337454ad704df3e577449"
+            href="https://my.indeed.com/api/3/profile/files/resume/mostRecent"
             target="_blank"
           >
             <p>Download resume</p>
