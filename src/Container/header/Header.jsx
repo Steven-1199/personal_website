@@ -22,7 +22,7 @@ const Header = () => {
           <img src={download} />
 
           <a
-            href="https://my.indeed.com/api/3/profile/files/resume/mostRecent"
+            href="https://drive.google.com/file/d/1vEso8E49sFHGDa5s7Py76q2mbKoIWC8-/view?usp=sharing"
             target="_blank"
           >
             <p>Download resume</p>
