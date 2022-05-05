@@ -25,7 +25,7 @@ const Header = () => {
           <img src={download} />
 
           <a
-            href="https://drive.google.com/file/d/1vEso8E49sFHGDa5s7Py76q2mbKoIWC8-/view?usp=sharing"
+            href="https://drive.google.com/file/d/14YraqbWbny624L73hIj7W_7H7qnCZ1tA/view?usp=sharing"
             target="_blank"
           >
             <p>Download resume</p>
