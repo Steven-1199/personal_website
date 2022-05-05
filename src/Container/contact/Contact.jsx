@@ -1,10 +1,11 @@
 import React from "react";
-import "./contact.css";
+import "./contact.scss";
 import map from "../../assets/map.png";
 import linkedin from "../../assets/linkedin.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import emailjs from "emailjs-com";
+import { AppWrap } from "../../wrapper";
 
 const Footer = () => {
   function sendEmail(e) {
@@ -28,7 +29,7 @@ const Footer = () => {
     e.target.reset();
   }
   return (
-    <div className="section__padding" id="contact">
+    <div className="contact__section-outer">
       <div className="contact__section">
         <div className="contact__section-outer-outercontainer">
           <div className="contact__section-title">
@@ -92,4 +93,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default AppWrap(Footer, "contact");

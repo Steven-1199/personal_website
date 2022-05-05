@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import "./header.css";
+import "./header.scss";
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
 import computer from "../../assets/computer.png";
 import download from "../../assets/download.png";
+import circle from "../../assets/circle.svg";
+import { AppWrap } from "../../wrapper";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="gpt3__header section__padding" id="home">
+    <div className="gpt3__header">
       <div className="gpt3__header-content">
         <h1 className="">
           <span className="titleS">Hello!</span> <br />
@@ -29,11 +32,22 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="gpt3__header-image">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="gpt3__header-image"
+      >
         <img src={computer} alt="computer" />
-      </div>
+        <motion.img
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          src={circle}
+          alt="profile_circle"
+          className="overlay_circle"
+        />
+      </motion.div>
     </div>
   );
 };
 
-export default Header;
+export default AppWrap(Header, "home");

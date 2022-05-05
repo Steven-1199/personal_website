@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 0.8rem 6rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  backdrop-filter: blur(4px);
 }
 
 .gpt3__navbar-links {
@@ -35,7 +40,7 @@
   color: #fff;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
   text-transform: capitalize;
 
@@ -45,7 +50,7 @@
 
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.8rem;
   color: #fff;
   font-family: var(--font-family);
   font-weight: 500;

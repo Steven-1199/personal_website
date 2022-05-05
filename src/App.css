@@ -14,6 +14,14 @@ a {
 .app {
   background-color: var(--color-bg);
 }
+.App {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: relative;
+}
 
 .gradient__bg {
   /* ff 3.6+ */
@@ -108,6 +116,14 @@ a {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 @-webkit-keyframes scale-up-center {

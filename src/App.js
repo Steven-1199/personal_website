@@ -7,11 +7,9 @@ import homebb from "./assets/homebb.png";
 function App() {
   return (
     <div className="App">
-      <div className="app">
-        <Navbar />
-        <Header />
-      </div>
-      <Brand />
+      <Navbar />
+      <Header />
+      {/* <Brand />*/}
       <Skill />
       <Features />
       <Contact />

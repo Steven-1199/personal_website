@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <h1>PP</h1>
+          <h1>PHANIT PHOU</h1>
         </div>
         <div className="gpt3__navbar-links_container">
           <Menu />

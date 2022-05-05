@@ -1,85 +1,53 @@
 import React from "react";
 import { Feature } from "../../Components";
-import "./skill.css";
+import "./skill.scss";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import javascript from "../../assets/javascript.png";
 import react from "../../assets/react.png";
-import nodejs from "../../assets/nodejs.png";
+import node from "../../assets/node.png";
 import mysql from "../../assets/mysql.png";
 import c from "../../assets/c.png";
+import git from "../../assets/git.png";
+import redux from "../../assets/redux.png";
+import mongodb from "../../assets/mongodb.png";
+
+import { motion } from "framer-motion";
+
+import { AppWrap } from "../../wrapper";
 
 const Skill = () => {
   return (
-    <div className="skill section__margin" id="skilll">
+    <div className="skill">
       <div className="skill-feature">
         <Feature title="SKILLS" text="" />
       </div>
 
       <div className="skill-container">
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={html} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>HTML</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={css} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>css</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={javascript} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>Javascript</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={react} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>React</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={nodejs} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>Node.js</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={mysql} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>MySQL</h1>
-          </div>
-        </div>
-        <div className="gpt3__feature-container__feature">
-          <div className="gpt3__feature-container__feature-text">
-            <img src={c} />
-          </div>
-          <div className="gpt3__feature-container__feature-title">
-            <div></div>
-            <h1>C</h1>
-          </div>
-        </div>
+        {[
+          [html, "HTML", "rgba(249, 154, 93, 0.3)"],
+          [css, "CSS", "rgba(211,211,211,0.8)"],
+          [javascript, "Javascript", "rgba(255,255,0,0.1)"],
+          [react, "React", "rgba(211,211,211,0.8)"],
+          [node, "Node.js", "rgba(0,128,0, 0.2)"],
+          [mysql, "MySQL", "rgba(211,211,211,0.8)"],
+          [mongodb, "MongoDB", "rgba(0,128,0, 0.2)"],
+          [c, "C", "rgba(211,211,211,0.8)"],
+          [git, "Git", "rgba(249, 154, 93, 0.3)"],
+          [redux, "Redux", "rgba(211,211,211,0.8)"],
+        ].map((value, index) => (
+          <motion.div
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 0.3 }}
+            className="gpt3__feature-container__skill"
+            key={index}
+          >
+            <div className="" style={{ backgroundColor: value[2] }}>
+              <img src={value[0]} />
+            </div>
+            <p>{value[1]}</p>
+          </motion.div>
+        ))}
       </div>
       <div className="skill-feature">
         <div className="ed">
@@ -99,4 +67,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default AppWrap(Skill, "skilll");
